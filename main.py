@@ -6,7 +6,7 @@ import random
 
 
 def start_working():
-    count = 1
+    count = 2
 
     send_commit(count)
 
@@ -21,7 +21,6 @@ def send_commit(count):
 
     os.system("git commit -a -m commit" + str(count))
     time.sleep(5)
-
     os.system("git push")
 
 
