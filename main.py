@@ -5,13 +5,11 @@ import random
 
 
 def start_working():
-    count = 7
-    send_commit(count)
-
-    # while True:
-    #     send_commit()
-    #     count += 1
-    #     time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
+    count = 8
+    while True:
+        send_commit(count)
+        count += 1
+        time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
 
 
 def send_commit(count):
