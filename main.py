@@ -5,12 +5,12 @@ import random
 
 
 def start_working():
-    count = 10
+    count = 20
     while True:
         send_commit(count)
         count += 1
         # time.sleep(timedelta(hours=random.randint(1, 10), seconds=10).seconds)
-        time.sleep(timedelta(seconds=1).seconds)
+        time.sleep(timedelta(seconds=0.5).seconds)
 
 
 def send_commit(count):
@@ -18,7 +18,7 @@ def send_commit(count):
         file.write("I already have " + str(count) + " commits!")
 
     os.system("git commit -a -m commit" + str(count))
-    time.sleep(1)
+    # time.sleep(1)
     os.system("git push")
 
 
