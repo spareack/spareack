@@ -5,7 +5,7 @@ import random
 
 
 def start_working():
-    count = 5
+    count = 6
     send_commit()
 
     # while True:
