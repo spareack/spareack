@@ -1,18 +1,15 @@
-
-from datetime import datetime, timedelta
+from datetime import timedelta
 import os
 import time
 import random
 
 
 def start_working():
-    count = 2
-
-    send_commit(count)
-
-    # while True:
-    #     sendCommit()
-    #     time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
+    count = 3
+    while True:
+        send_commit()
+        count += 1
+        time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
 
 
 def send_commit(count):
