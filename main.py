@@ -6,10 +6,12 @@ import random
 
 def start_working():
     count = 3
-    while True:
-        send_commit()
-        count += 1
-        time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
+    send_commit()
+
+    # while True:
+    #     send_commit()
+    #     count += 1
+    #     time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
 
 
 def send_commit(count):
