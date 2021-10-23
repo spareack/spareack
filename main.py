@@ -9,8 +9,8 @@ def start_working():
     while True:
         send_commit(count)
         count += 1
-        # time.sleep(timedelta(hours=random.randint(1, 10), seconds=10).seconds)
-        time.sleep(timedelta(seconds=0.5).seconds)
+        time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
+        # time.sleep(timedelta(seconds=0.5).seconds)
 
 
 def send_commit(count):
