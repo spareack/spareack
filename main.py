@@ -5,11 +5,11 @@ import random
 
 
 def start_working():
-    count = 20
+    count = 30537
     while True:
         send_commit(count)
         count += 1
-        time.sleep(timedelta(hours=random.randint(1, 10)).seconds)
+        time.sleep(timedelta(hours=random.randint(2, 10)).seconds)
         # time.sleep(timedelta(seconds=0.5).seconds)
 
 
